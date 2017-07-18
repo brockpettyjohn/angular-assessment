@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="assessment">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Front End Assessment</title>
@@ -11,10 +11,14 @@
         <!--Here is your header with the navigation nested inside -->
         <header class="site-header" role="banner">
             <div class="container">
-              <!--Insert Logo directive here -->
+              <logo></logo><!--Insert Logo directive here -->
                 <nav class="site-nav">
                     <ul class="primary-nav">
                         <!-- Navs go here -->
+                        <a ui-sref="home">Home</a>
+                        <a ui-sref="about">About</a>
+                        <a ui-sref="blog">Blog</a>
+                        <a ui-sref="shop">Shop</a>
                     </ul>
                 </nav>
                 <button class="hamburger toggle-nav js-toggle-nav" ng-click="showNav">
@@ -28,6 +32,7 @@
         <main class="site-main" role="main">
 
         <!--Views go here -->
+        <ui-view></ui-view>
 
         </main>
         </div>
@@ -35,7 +40,12 @@
 
 <!--ADD ALL YOUR SCRIPTS HERE -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="./app.js"></script>
+<script src="./js/productDetailsCtrl.js"></script>
+<script src="./js/shopCtrl.js"></script>
+<script src="./js/shopService.js"></script>
+<script src='./js/logo.js'></script>
 
 </body>
 </html>
