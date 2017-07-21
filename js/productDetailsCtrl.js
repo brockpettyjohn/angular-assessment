@@ -5,11 +5,4 @@ angular.module('app').controller('productDetailsCtrl', function($scope, shopServ
         })
     }
     $scope.getId()
-
-    $scope.products = false;
-    console.log($scope.products)
-
-    $scope.showProducts = () => {
-        $scope.products = !$scope.products;
-    }
 })
