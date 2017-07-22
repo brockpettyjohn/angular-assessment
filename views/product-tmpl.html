@@ -9,7 +9,7 @@
         <div class="product-grid__meta" >
             <!--Title click Should redirect to the product-details section. remember to pass along the product id so you can make an api call
         to get the specific product details-->
-            <h3 class="product-grid__name"><a ui-sref="product-details({id: prodsSpecial})">{{prodsSpecial.title}}<!--Title--></a></h3>
+            <h3 class="product-grid__name"><a ui-sref="product-details({id: prodsSpecial.id})">{{prodsSpecial.title}}<!--Title--></a></h3>
             
             <!--Product Description-->
             <h4 class="product-grid__sub">{{prodsSpecial.desc}}<!--Desc--></h4>

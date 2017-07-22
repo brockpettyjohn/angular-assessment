@@ -1,3 +1,20 @@
+// angular.module("myApp").directive("product", function (){
+//     return {
+//         restrict: 'EA',
+//         templateUrl:  './views/product-tmpl.html',
+//         scope: {
+// 				shop: '='
+// 			},
+//     controller: 'productDetailsCtrl'  
+//     }
+// })
+
+
+
+
+
+
+
 angular.module('app')
 .directive('products', function(){
     return {

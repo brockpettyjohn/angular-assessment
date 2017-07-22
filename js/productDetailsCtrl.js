@@ -2,7 +2,10 @@ angular.module('app').controller('productDetailsCtrl', function($scope, shopServ
     $scope.getId = function(){
         shopService.getId($stateParams.id).then(function(response){
             $scope.id = response.data
+            console.log(response.data)
+            
         })
     }
     $scope.getId()
 })
+

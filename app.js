@@ -25,7 +25,8 @@ angular.module('app', ['ui.router'])
         })
          .state('product-details', {
             url: '/product-details/:id',
-            templateUrl: './views/product-tmpl.html',
+            // templateUrl: './views/product-tmpl.html',
+            templateUrl: './views/product-details.html',
             controller: 'productDetailsCtrl'
 
         })
