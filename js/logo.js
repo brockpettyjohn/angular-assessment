@@ -1,7 +1,7 @@
 angular.module('app')
-.directive('logo', function() {
-    return {
-        restrict: 'E',
-        templateUrl: './views/logo.html'
-    }
-})
+    .directive('logo', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './views/logo.html'
+        }
+    })
